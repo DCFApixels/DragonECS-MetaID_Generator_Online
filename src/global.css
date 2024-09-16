@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #315385;
+}
+
+.panel{
+    margin: 5pt;
+    padding: 5pt;
+    border-radius: 5pt;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 15px #0016705b;
+
+    margin-top: 30pt;
+}
+
+/*==============================================================*/
+button{
+    height: 22pt;
+
+    background-color: #0099ffe8;
+    transition: 0.09s background-color;
+
+    border-radius: 5px;
+    border: 0;
+    padding: 0 14px;
+    font-family: inherit;
+
+    font-size: 13pt;
+    color: #ffffff;
+    width:100%;
+}
+button:hover {
+    background-color: #52c8ff;
+    transition: background-color 0.08s;
+}
+button:active {
+    background-color: #008cff;
+    transition: background-color 0.08s;
+}
+button:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 1px #0084ff, inset 0 0 0 2px #ffffffc5;
+}
+/*==============================================================*/
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    display: inline-block;
+
+    height: 22pt;
+    width: 100%;
+
+    padding: 0 4px;
+    margin: 4px 0px;
+
+    border: 0;
+    color: #000000;
+    background-color: transparent;
+    box-shadow: inset 0 -3px 0 -1px #0099ffe8;
+}
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="number"]::placeholder {
+    font-style: italic;
+    font-size: 10pt;
+    color: #001d382f;
+}
+
+/*==============================================================*/
+label{
+    margin-right: 10px;
+}
+/*==============================================================*/
+.label_input_pair{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.label_input_pair>label{
+    min-width: 130px;
+    order: 1; 
+}
+.label_input_pair>label+*{
+    order: 2; 
+    max-width: 100%;
+    flex-grow: 1; 
+}
+.label_input_pair>button{
+    order: 3; 
+    margin-left: 10px;
+}
+/*==============================================================*/
+
+#generate_button{
+    margin-top: 8pt;
+}
