@@ -87,7 +87,7 @@ label{
     min-width: 130px;
     order: 1; 
 }
-.label_input_pair>label+*{
+.label_input_pair> *{
     order: 2; 
     max-width: 100%;
     flex-grow: 1; 
@@ -100,4 +100,34 @@ label{
 
 #generate_button{
     margin-top: 8pt;
+}
+
+/*==============================================================*/
+.icon_button, 
+.icon_button:hover,
+.icon_button:active,
+.icon_button:focus,
+.icon_button[disabled]{
+    height: 22pt;
+    width: 22pt;
+    background-size: 18pt;
+    min-width: 0;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.08s;
+}
+.trnsp.icon_button:hover {
+    background-position-y: top;
+    transition: 0.08s;
+}
+.trnsp.icon_button:active {
+    background-position-y: bottom;
+    transition: 0.08s;
+}
+.trnsp.icon_button{
+    background-color: transparent;
+}
+.icon_button.copy{
+    background-image: url(../src/file_copy_white_24dp.svg);
 }
